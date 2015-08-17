@@ -1,0 +1,449 @@
+@charset "utf-8";
+/*--------------------------------------------
+
+# Game Hunter Main Stylesheet
+
+Filename:		main.css
+Site:			gamehunter.com
+Version:		1.1
+Last change:	12/12/2011 [basic styles]
+Author:			Jay Manalansan (JM)
+Description:	Style sheet for Game Hunter
+
+## TOC
+*Color Glossary
+*Font Adds
+*Simple Reset
+*Body
+**infoBox
+***greeting
+***cartBox
+***logIn
+**ghLogo
+**slideshow
+
+**
+## Color Glossary
+Dark Gray: rgb(43, 42, 42);
+Pastel Blue: rgb(142, 190, 187);
+Alert Red: rgb(208, 24, 24);
+Light Gray: rgb(237, 237, 237);
+Xbox360 Green: rgb(105, 150, 53);
+PS3 Blue: rgb(53, 78, 150);
+Wii Teal: rgb(53, 144, 150);
+3DS Purple: rgb(76, 53, 150);
+PSP Red: rgb(150, 53, 53);
+
+*/
+
+/*Font Adds -------------------------------------*/
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/League_Gothic.OTF');
+}
+
+@font-face {
+	font-family: 'Downcome';
+	src: url('../fonts/DOWNCOME.TTF');
+}
+
+
+/*Simple Reset --------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	line-height: 1.4em;
+	vertical-align: baseline;
+	text-decoration: none;	
+		
+}
+
+html {
+	margin: 0;
+	padding: 0;	
+}
+
+/*Body ----------------------------------------------*/
+
+body {
+	background-color: rgb(237, 237, 237);
+	width: 1020px;	
+}
+
+#mainIndex {
+	height: 1000px;	
+	position: relative;
+	margin: 0 auto;
+}
+#allIndex {
+	margin: 0 auto;
+}
+#xbox360Index {
+	margin: 0 auto;	
+}
+/*infoBox -------------------------------------------*/
+
+#infoBox {
+	position: relative;
+	left: 525px;
+	width: 454px;
+	height: 78px;
+	font-family:Verdana;
+	font-size: 0.8em;
+	color: rgb(237, 237, 237); 
+	
+	
+}
+
+/**greeting ----------------------------------------*/
+
+#greeting{
+	float: left;
+	width: 339px;
+	background-color: rgb(43, 42, 42);	
+	padding-left: 15px;
+	
+}
+.greetLink {
+	color: rgb(142, 190, 187);
+	font-style:italic;
+	
+}
+
+/**cartBox ----------------------------------------*/
+
+#cartBox {
+	float: left;
+	width: 100px;	
+	background-color: rgb(43, 42, 42);
+	height: 78px;
+	
+}
+#cartBox p {
+	padding-left: 20px;
+}
+#cartBox img {
+	padding-left: 20px;
+}
+
+/**logIn ----------------------------------------*/
+
+#logIn {	
+	clear: both;
+	height: 60px; 
+	width: 354px;
+	background-color: rgb(43, 42, 42);
+	position: relative;
+	top: -60px;
+}
+
+.clearfix { 
+	clear: both; 
+	overflow:hidden;
+}
+/*ghLogo -----------------------------------------*/
+
+#ghLogo {
+	position: relative;
+	top: 26px;
+	left: 40px;
+	width: 240px;
+}
+
+/*mainNav -----------------------------------------*/
+
+#mainNav a {
+	position: relative; 
+	top: -24px;
+	left: 280px;
+	font-family: League Gothic, Arial, Helvetica, sans-serif;
+	font-size: 24pt;
+	color: rgb(43, 42, 42);
+}
+#mainNav li {
+	display: inline;
+	margin-left:-5px;
+	color: rgb(43, 42, 42);
+}
+#allNav {
+	border-bottom: 6px solid rgb(43, 42, 42);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#xbox360Nav {
+	border-bottom: 6px solid rgb(105, 150, 53);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#ps3Nav {
+	border-bottom: 6px solid rgb(53, 78, 150);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#wiiNav {
+	border-bottom: 6px solid rgb(53, 144, 150);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#dsNav {
+	border-bottom: 6px solid rgb(76, 53, 150);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#pspNav {
+	border-bottom: 6px solid rgb(150, 53, 53);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+/*searchBar -----------------------------------------*/
+
+#searchBar {
+	position: relative;
+	top: -45px;
+	left: 720px;
+	width: 280px;
+}
+
+/*subNav -----------------------------------------*/
+
+#subNav {
+	position: relative;
+	top: -46px;
+	left: 40px;
+	background-color: rgb(43, 42, 42);
+	height: 40px;
+	width: 939px;
+}
+#subNavText {
+	font-family: Verdana, Geneva, sans-serif;
+	color: rgb(237, 237, 237);
+	font-size: 0.8em;
+	padding-top: 11px;
+	padding-left: 5px;
+	position: relative;
+	left: 60px;
+}
+#subNavText li {
+	display: inline;
+	padding-left: 10px;
+}
+
+/* content-----------------------------------*/
+#outerWrapper {
+	margin: 0;
+	position:relative;
+	top: -50px;
+	left: 200px;
+	width: 650px;	
+	height: 500px;
+}
+.headline {
+	font-size: 56px; 
+	font-family: League Gothic;	
+	margin: 0;
+	color: rgb(43, 42, 42);
+}
+.subline {
+	font-family: Verdana;
+	font-size: 18px;
+	margin: 0;
+	padding: 6px 0px 6px 0px;
+	color: rgb(43, 42, 42);
+}
+.title {
+	font-family: Verdana;
+	font-size: 12px;
+	margin: 0;	
+	padding: 6px 0px 6px 0px;
+	color: rgb(43, 42, 42);
+}
+hr {
+	width: 552px;	
+	margin: 0; 
+	color: rgb(43, 42, 42);
+}
+.thicker {
+	height: 3px;
+	background-color: rgb(43, 42, 42);
+	color: rgb(43, 42, 42);
+}
+#cart_summary td{
+	padding: 4px;;
+	width: 100px;
+ }
+#cart_summary {
+	border-bottom: solid 5px black;	
+}
+#yourInformationBody {
+	position: relative;
+	left: 240px;
+	top: -50px;	
+}
+#delivery {
+	margin: -25px 0px 6px 0px;
+	padding: 0px 0px 0px 307px;	
+}
+#deliveryText {
+	margin: -38px 0px 6px 0px;
+	padding: 0px 0px 0px 307px;
+	font-family: Verdana;
+	font-size: 12px;
+}
+#deliveryA{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	left: 528px;
+	top: -20px;
+}
+#handlingWrapper{
+	margin: -108px 0px 0px 0px;
+	padding: 0px 0px 0px 170px;
+}
+#deliveryForm {
+	padding: 0px 0px 0px 307px;	
+	margin: -360px 0px 0px 0px;
+}
+label {
+	padding: 10px 0px 0px 0px;	
+	display: block;
+	font-size: 12px;
+	font-family: Verdana;
+	
+}
+label.error{
+	color: #F00;
+	font-weight: bold;	
+}
+.warning {
+	color: #F00;
+	font-weight: bold;	
+}
+.handling {
+	padding: 0px;
+	display:inline;	
+	font-size: 12px;
+}
+#submit {
+	margin: 10px 0px 0px 280px;	
+}
+.deliveryShow {
+	margin: 0px;
+	font-size: 12px;
+	width: 200px;
+}
+.sub_total {
+	padding: 0px 0px 0px 330px;
+	margin: 10px;	
+	font-size: 18px;
+}
+.shipping_choice {
+	padding: 0px 0px 0px 180px;	
+	font-size: 18px;
+	margin: 10px;
+}
+#sub_total_price {
+	margin: -29px 0px 10px 0px;
+	padding: 0px 0px 0px 507px;	
+}
+#plus {
+	margin: -29px 0px 20px 0px;
+	padding: 0px 0px 0px 460px;
+}
+#handlingPrice {
+	margin: -39px 0px 14px 0px;
+	padding: 0px 0px 0px 508px;
+}
+.smallRT {
+	width: 280px;
+	margin: 0px 0px 0px 272px;	 
+}
+.smallRT2 {
+	width: 280px;
+	margin: 0px 0px 0px 272px;	
+}
+.grand_total {
+	padding: 0px 0px 0px 276px;	
+	font-size: 28px;
+	margin: 12px 0px 0px 0px;
+}
+#grand_total_price {
+	margin: -22px 0px 10px 0px;
+	padding: 0px 0px 0px 507px;
+}
+
+/* begin Payment Details Page */
+
+.paymentShow {
+	width: 100px;
+	font-size: 14px;
+	margin: 0px;	
+	
+}
+#paymentRight {
+	margin: -58px 0px 0px 0px;
+	padding: 0px 0px 0px 160px;	
+	font-size: 14px;
+}
+.paymentSummaryPrice {
+	margin: 0px;
+	padding: 0px;	
+	width: 80px;
+}
+.smallLT {
+	width: 200px;
+	margin: 5px 0px 0px 0px;	
+}
+#total {
+	margin: 0px;	
+	padding: 15px 0px 0px 0px;
+	font-size:30px;
+}
+#totalPrice {
+	margin: -29px 0px 0px 0px;
+	padding: 0px 0px 0px 135px;
+	width: 50px;	
+	font-size: 20px;
+}
+
+#rightItemSummary {
+	float:right;
+	padding: 0px 200px 0px 0px;
+	margin: -148px 0px 0px 0px;
+}
+#creditFormWrapLeft {
+	float:left;
+	width: 200px;	
+}
+#creditFormWrap {
+	margin: 0px;
+	padding: 0px 195px 0px 0px;
+	float:right;
+	width: 150px;
+}
+
+#submit1{
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+}
+
+
+#disclaimer {
+	position:relative;
+	top: -180px;
+	left: 280px;
+	color:#F00;
+	font-size: 16px;	
+}
+#disclaimer2 {
+	position:relative;
+	top: -180px;
+	left: 280px;
+	color:#F00;
+	font-size: 16px;	
+}
+/* end Payment Details Page */
